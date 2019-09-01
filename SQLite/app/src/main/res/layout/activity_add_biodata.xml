@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBiodata">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Identitas"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etId"
+            android:hint="9090909090"
+            android:background="@drawable/i_text_bg"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nama Lengkap"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNama"
+            android:hint="Nama Lengkap"
+            android:background="@drawable/i_text_bg"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jkelL"
+                android:text="Laki - laki" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jkelP"
+                android:text="Perempuan"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/etAlamat"
+            android:inputType="text|textMultiLine"
+            android:gravity="top|left"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:background="@drawable/i_text_bg" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSimpan"
+            android:text="Simpan"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary" />
+    </LinearLayout>
+
+</RelativeLayout>
